@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+    <style>
+      body {
+        background-image: url("./assets/img/bg.avif");
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .contact-form {
+        background-color: white;
+        padding: 40px;
+        border-radius: 10px;
+        width: 320px;
+      }
+      .contact-form h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: bold;
+      }
+      .contact-form input,
+      .contact-form select,
+      .contact-form textarea {
+        width: 100%;
+        font-weight: bold;
+        padding: 12px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-size: 16px;
+        border-bottom: 2px solid black;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+      }
+      .contact-form button {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 25px;
+        font-size: 16px;
+        background-color: powderblue;
+      }
+      .contact-form button:hover {
+        background: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="fff" class="contact-form">
+      <h1>Say Hello!</h1>
+      <label for="Your name">Your Name</label>
+      <br />
+      <input type="text" name="Your name" placeholder="Enter your name" />
+      <br />
+      <label for="Email">Email</label>
+      <br />
+      <input
+        type="email"
+        name="email"
+        placeholder="Enter you email address"
+        required
+      />
+      <br />
+      <label for="Service">Service</label>
+      <br />
+      <select name="service">
+        <option value="">Choose Service</option>
+        <option value="web">Web development</option>
+        <option value="desgin">Design</option>
+        <option value="seo">SEO</option>
+      </select>
+      <br />
+      <label for="Budget">Budget</label>
+      <br />
+      <select name="budget">
+        <option value="">Select budget</option>
+        <option value="low">500-1000</option>
+        <option value="medium">1000-5000</option>
+        <option value="high">5000-10000</option>
+      </select>
+      <br />
+      <label for="Message">Message</label>
+      <br />
+      <textarea
+        name="message"
+        placeholder="Your message here"
+        rows="4"
+      ></textarea>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

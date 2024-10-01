@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+.body {
+  overflow-x: hidden;
+  font-family: arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.main-menu-logo {
+  padding-right: 40px;
+  margin-right: 50px;
+}
+.container {
+  max-width: 1420px;
+  margin: auto;
+}
+.nav-head {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  padding: 10px;
+  background-image: url("https://v208ef.p3cdn1.secureserver.net/wp-content/uploads/2023/12/banner_bg_1.png?time=1726172818");
+}
+.nav-head ul {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.nav-head a {
+  font-family: arial, sans-serif;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  justify-content: space-between;
+  padding: 10px;
+}
+.head {
+  display: flex;
+  background-image: url("https://v208ef.p3cdn1.secureserver.net/wp-content/uploads/2023/12/banner_bg_1.png?time=1726172818");
+  padding: 40px;
+  width: 100%;
+}
+.head h1 {
+  padding: 10px;
+  color: white;
+  font-family: arial, sans-serif;
+  font-size: 64px;
+  font-weight: 900;
+}
+.head p {
+  color: #cacaca;
+  font-family: arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.my-button {
+  border-radius: 5px;
+  padding: 15px;
+
+  color: purple;
+  border: 1px solid #06b1f3c7;
+}
+.first-img {
+  width: 50%;
+  padding: 20px;
+}
+.second-images {
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.one {
+  border-radius: 13px 0;
+  box-shadow: 0 2px 11px -3px #0000002b;
+  padding: 10px 33px;
+  height: 78px;
+  object-fit: contain;
+}
+.two {
+  border-radius: 13px 0;
+  box-shadow: 0 2px 11px -3px #0000002b;
+  padding: 10px 33px;
+  height: 78px;
+  object-fit: contain;
+}
+
+.three {
+  border-radius: 13px 0;
+  box-shadow: 0 2px 11px -3px #0000002b;
+  padding: 10px 33px;
+  height: 78px;
+  object-fit: contain;
+}
+.second-para {
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  display: flex;
+  background-image: url("https://v208ef.p3cdn1.secureserver.net/wp-content/uploads/2023/12/bg_3.png?time=1726172818");
+}
+.co-second {
+  padding-left: 20px;
+}
+.Third-image {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}

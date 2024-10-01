@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sachin sharma</title>
+    <style>
+      body {
+        box-sizing: border-box;
+        overflow-x: hidden;
+        font-family: arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      .navbar {
+        display: flex;
+        align-items: center;
+        background-color: #333;
+        padding: 10px 20px;
+        justify-content: space-between;
+      }
+
+      .navbar img {
+        border-radius: 50%;
+        height: 50px;
+      }
+
+      .navbar a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .navbar-links {
+        display: flex;
+      }
+
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .my-button {
+        border: 1px solid white;
+        background-color: black;
+        color: white;
+        margin-top: 5%;
+        border-radius: 10px;
+        padding: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+      .my-button:hover {
+        background-color: grey;
+        color: white;
+      }
+      .new-button {
+        border: 1px solid black;
+        background-color: black;
+        color: white;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 5%;
+        border-radius: 10px;
+        padding: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+      .new-button:hover {
+        background-color: grey;
+      }
+      .one-button {
+        border: 1px solid white;
+        background-color: black;
+        color: white;
+        margin-top: 5%;
+        border-radius: 10px;
+        padding: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+      .one-button:hover {
+        background-color: grey;
+      }
+      .footer img {
+        height: 50px;
+        padding: 10px;
+        margin-right: 20px;
+        border-radius: 8px;
+      }
+      .footer {
+        display: flex;
+        justify-content: center;
+        color: white;
+        padding: 20px;
+        align-items: center;
+        background-color: black;
+        justify-content: space-between;
+      }
+
+      .links {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+
+        color: white;
+        margin-top: 30px 0;
+        padding: 30px;
+      }
+      .links a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .links div {
+        text-align: center;
+      }
+
+      .links li {
+        justify-content: space-evenly;
+        list-style: none;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+      }
+      .links a:hover {
+        color: #ddd;
+      }
+
+      .hero {
+        display: flex;
+        padding-top: 20px;
+        width: 100%;
+        padding-left: 20px;
+      }
+      .hero h1 {
+        font-size: 50px;
+      }
+      .hero p {
+        font-size: 20px;
+        padding-top: 0px;
+        padding-bottom: 10px;
+        line-height: 20px;
+      }
+      .left {
+        width: 50%;
+        padding: 20px;
+      }
+      .right {
+        width: 50%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      .right img {
+        border-radius: 10px;
+        text-align: center;
+        width: 350px;
+        height: 200px;
+      }
+      .zero {
+        background-color: grey;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        width: 100%;
+      }
+      .zero h1 {
+        font-size: 50px;
+      }
+      .zero p {
+        font-size: 20px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+        line-height: 20px;
+      }
+      .one {
+        text-align: center;
+        width: 50%;
+        padding: 20px;
+      }
+      .two {
+        width: 50%;
+        padding: 20px;
+      }
+      .one img {
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+      .four {
+        width: 50%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .four img {
+        border-radius: 10px;
+        width: 80%;
+        display: flex;
+      }
+
+      .hike {
+        display: flex;
+        padding: 10px;
+      }
+      .three h1 {
+        font-size: 50px;
+      }
+      .three p {
+        font-size: 20px;
+        padding-top: 0px;
+        padding-bottom: 10px;
+        line-height: 20px;
+      }
+      .three {
+        width: 50%;
+        padding: 10px;
+      }
+
+      .three p {
+        width: 40rem;
+      }
+
+      .main {
+        padding-top: 30px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+      }
+      .main img {
+        padding-top: 30px;
+        padding-left: 10px;
+        border-radius: 50px;
+        width: 15%;
+      }
+      .logo p {
+        width: 100%;
+        padding-right: 15px;
+      }
+      .main p {
+        padding: 10px;
+      }
+      .main li {
+        color: white;
+        list-style-type: none;
+      }
+      .home a {
+        font-size: 30px;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        text-decoration: none;
+        color: white;
+      }
+      .home p {
+        padding-right: 20px;
+        font-size: 15px;
+      }
+      .aboutus a {
+        font-size: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-decoration: none;
+        color: white;
+      }
+      .aboutus p {
+        padding-right: 20px;
+        font-size: 15px;
+      }
+      .contact a {
+        font-size: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-decoration: none;
+        color: white;
+      }
+      .contact p {
+        padding-right: 20px;
+        font-size: 15px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="./assets/img/download (2).jpeg" alt="Logo" />
+      <div class="navbar-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="left">
+        <h1>The perfect paragraphs</h1>
+        <p>
+          As Michael Harvey writes, paragraphs are “in essence— a form of
+          punctuation, and like other forms of punctuation they are meant to
+          make written material easy to read
+        </p>
+        <input type="button" class="my-button" value="Click Me!" />
+      </div>
+      <div class="right">
+        <img src="./assets/img/hotel.jpg" alt="pic" />
+      </div>
+    </div>
+
+    <div class="zero">
+      <div class="one">
+        <h1>Cohesion and Coherence</h1>
+
+        <p>
+          With a key sentence established, the next task is to shape the body of
+          your paragraph to be both cohesive and coherent. As Williams and
+          Bizup[3]
+        </p>
+
+        <img src="./assets/img/water.gif" />
+        <input type="button" class="new-button" value="Click Me!" />
+      </div>
+    </div>
+
+    <div class="hike">
+      <div class="four">
+        <img src="./assets/img/nature.gif" />
+      </div>
+      <div class="three">
+        <h1>Conclusion: Paragraphs as Punctuation</h1>
+
+        <p>
+          To reiterate the initial point, it is useful to think of paragraphs as
+          punctuation that your ideas in a readable way. Each paragraph should .
+        </p>
+
+        <input type="button" class="one-button" value="Click Me!" />
+      </div>
+    </div>
+
+    <!--footer here moved -->
+
+    <footer>
+      <div
+        class="footer-container"
+        style="background-color: #333; color: white"
+      >
+        <div
+          class="footer-content"
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <div
+            class="footer-section logo"
+            style="padding-left: 10px; padding-right: 10px"
+          >
+            <img
+              src="./assets/img/download (2).jpeg"
+              alt="Logo"
+              style="width: 60px; height: 60px; border-radius: 50%"
+            />
+            <p>Providing excellent content since 2024</p>
+          </div>
+
+          <div class="footer-section quick-links">
+            <h3>Quick Links</h3>
+            <ul style="list-style: none; padding: 0">
+              <li>
+                <a href="#" style="color: white; text-decoration: none">Home</a>
+              </li>
+              <br />
+              <li>
+                <a href="#" style="color: white; text-decoration: none"
+                  >About Us</a
+                >
+              </li>
+              <br />
+              <li>
+                <a href="#" style="color: white; text-decoration: none"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-section social-media">
+            <h3 style="margin-bottom: 20px">Follow Us</h3>
+            <div style="display: flex">
+              <a href="https://www.facebook.com/" target="_blank">
+                <img
+                  src="./assets/img/fb.jpeg"
+                  alt="Facebook"
+                  style="width: 40px"
+                />
+              </a>
+              <a href="https://x.com/" target="_blank">
+                <img src="./assets/img/x.jpeg" alt="X" style="width: 40px" />
+              </a>
+              <a href="https://www.instagram.com/?hl=en" target="_blank">
+                <img
+                  src="./assets/img/insta.png"
+                  alt="Instagram"
+                  style="width: 40px"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="footer-bottom"
+          style="width: 100%; border: 1px solid white; box-sizing: border-box"
+        ></div>
+        <div class="para" style="text-align: center; padding-bottom: 10px">
+          <p>&copy 2024 Sachin Sharma. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

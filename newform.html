@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #7f00ff, #e100ff);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .contact-form {
+        background: #fff;
+        padding: 40px;
+        border-radius: 10px;
+        width: 320px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact-form h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+
+      .contact-form input,
+      .contact-form select,
+      .contact-form textarea {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+
+      .contact-form select {
+        appearance: none;
+      }
+
+      .contact-form button {
+        width: 100%;
+        padding: 12px;
+        background: linear-gradient(135deg, #00c6ff, #0072ff);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .contact-form button:hover {
+        background: linear-gradient(135deg, #0072ff, #00c6ff);
+      }
+    </style>
+  </head>
+  <body>
+    <form class="contact-form">
+      <h1>Say Hello!</h1>
+      <input type="text" name="name" placeholder="Enter your name" required />
+      <input
+        type="email"
+        name="email"
+        placeholder="Enter your email address"
+        required
+      />
+      <select name="services" required>
+        <option value="">Choose Services</option>
+        <option value="web">Web Development</option>
+        <option value="design">Design</option>
+        <option value="seo">SEO</option>
+      </select>
+      <select name="budget" required>
+        <option value="">Select Budget</option>
+        <option value="low">$500 - $1000</option>
+        <option value="medium">$1000 - $5000</option>
+        <option value="high">$5000+</option>
+      </select>
+      <textarea
+        name="message"
+        rows="4"
+        placeholder="Your message here..."
+        required
+      ></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
